@@ -8,6 +8,8 @@ An intelligent automation system that finds trending topics and creates engaging
 
 No trends or twitter api needed.
 
+[Demo Video](https://youtu.be/kXUEYRuS84Q)
+
 ## 🚀 Features
 
 - **Trend Discovery**: Automatically finds trending topics from Google Trends
