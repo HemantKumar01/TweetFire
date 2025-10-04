@@ -8,7 +8,7 @@ An intelligent automation system that finds trending topics and creates engaging
 
 No trends or twitter api needed.
 
-[Demo Video](https://youtu.be/kXUEYRuS84Q)
+[Demo Video](https://www.youtube.com/watch?v=lqUDDohz4qI)
 
 ## 🚀 Features
 
