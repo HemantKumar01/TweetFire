@@ -11,7 +11,7 @@ No trends or twitter api needed.
 ## Demo
 [![Demo Video](images/thumbnail.png)](https://www.youtube.com/watch?v=lqUDDohz4qI)
 
-## 🚀 Features
+## Features
 
 - **Trend Discovery**: Automatically finds trending topics from Google Trends
 - **AI Content Generation**: Uses Gemini API to create engaging Twitter posts and image prompts
@@ -19,7 +19,7 @@ No trends or twitter api needed.
 - **Social Media Automation**: Posts to Twitter/X with generated content and images
 - **Full Pipeline Automation**: End-to-end automation from trend discovery to posting
 
-## 📋 Prerequisites
+## Prerequisites
 
 1. **Android Device**: Android phone/tablet with USB debugging enabled or use an Emulator
 2. **ADB**: Android Debug Bridge installed and device connected
@@ -57,34 +57,13 @@ No trends or twitter api needed.
    ```bash
    droidrun setup
    ```
-## 🏃‍♂️ Usage
+## Usage
 
 ### Run Complete Pipeline
 ```bash
 ./tweetfire
 ```
 
-### Run Individual Components
-
-**Find Trending Topics**:
-```bash
-python agents/find_trend.py
-```
-
-**Generate Content**:
-```bash
-python agents/content_generator.py
-```
-
-**Generate Images**:
-```bash
-python agents/image_generator.py
-```
-
-**Post to Twitter**:
-```bash
-python agents/twitter_poster.py
-```
 
 ## 📁 Project Structure
 
@@ -121,7 +100,7 @@ All agent instructions and goals are stored in `agents/prompts/prompts.py`. You 
 - Image generation prompts
 - Social media posting behavior
 
-## 🤖 How It Works
+## How It Works
 
 1. **Trend Discovery**: DroidAgent opens Chrome, navigates to Google Trends, and extracts trending topics
 2. **Content Generation**: Gemini API generates engaging Twitter posts and image prompts based on trends
@@ -135,35 +114,7 @@ The system generates:
 - Console output with step-by-step progress
 - Posted content on your Twitter/X account
 
-## 🔍 Troubleshooting
-
-**ADB Connection Issues**:
-```bash
-adb kill-server
-adb start-server
-adb devices
-```
-
-**App Not Found**:
-- Ensure Chrome, Gemini, and Twitter apps are installed
-- Check app package names in prompts.py
-
-**API Issues**:
-- Verify GEMINI_API_KEY in .env file
-- Check API quota and billing in Google AI Studio
-
-**Agent Timeout**:
-- Increase timeout in DroidAgent configuration
-- Ensure device screen is unlocked during execution
-
-## 🛡️ Security Notes
-
-- Keep your `.env` file secure and never commit it to version control
-- Review generated content before it goes live
-- Monitor your API usage and costs
-- Use responsibly and comply with platform terms of service
-
-## 📝 License
+## License
 
 This project is for educational and personal use. Please comply with all relevant terms of service for the platforms and APIs used.
 
