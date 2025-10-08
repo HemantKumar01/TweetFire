@@ -8,7 +8,8 @@ An intelligent automation system that finds trending topics and creates engaging
 
 No trends or twitter api needed.
 
-[Demo Video](https://www.youtube.com/watch?v=lqUDDohz4qI)
+## Demo
+[![Demo Video](images/thumbnail.png)](https://www.youtube.com/watch?v=lqUDDohz4qI)
 
 ## 🚀 Features
 
@@ -47,14 +48,15 @@ No trends or twitter api needed.
    - Enable Developer Options on your Android device
    - Enable USB Debugging
    - Connect device via USB
-   - Verify connection: `adb devices`
 
 5. **App Installation**:
    Make sure these apps are installed on your Android device:
    - Chrome Browser
-   - Gemini App (or access via web)
    - Twitter/X App
-
+6. Droidrun Portal setup
+   ```bash
+   droidrun setup
+   ```
 ## 🏃‍♂️ Usage
 
 ### Run Complete Pipeline
