@@ -1,5 +1,5 @@
 colorama
 droidrun[google,anthropic,openai,deepseek,ollama,dev]
-llama-index-llms-ollama
+llama-index-llms-google-genai
 python-dotenv
 rich

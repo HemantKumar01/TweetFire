@@ -3,7 +3,7 @@ import asyncio
 import json
 import re
 from droidrun import AdbTools, DroidAgent
-from llama_index.llms.ollama import Ollama
+from llama_index.llms.google_genai import GoogleGenAI
 from agents.prompts.prompts import OPEN_CHROME_GOOGLE_TRENDS_GOAL
 from dotenv import load_dotenv
 import os
@@ -16,10 +16,10 @@ async def find_trend():
     # Load adb tools for the first connected device
     tools = AdbTools()
 
-    # Set up the Ollama LLM with Qwen model
-    llm = Ollama(
-        model=os.getenv("OLLAMA_MODEL", "qwen2.5:latest"),
-        request_timeout=120.0,
+    # Set up the Gemini LLM
+    llm = GoogleGenAI(
+        api_key=os.getenv("GEMINI_API_KEY"),
+        model="gemini-2.5-pro",
     )
 
     # Create the DroidAgent
