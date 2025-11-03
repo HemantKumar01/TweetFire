@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os
-from llama_index.llms.google_genai import GoogleGenAI
+from llama_index.llms.ollama import Ollama
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -8,9 +8,9 @@ load_dotenv()
 
 class ContentGenerator:
     def __init__(self):
-        self.llm = GoogleGenAI(
-            api_key=os.getenv("GEMINI_API_KEY"),
-            model="gemini-2.5-flash",
+        self.llm = Ollama(
+            model=os.getenv("OLLAMA_MODEL", "qwen2.5:latest"),
+            request_timeout=120.0,
         )
 
     async def generate_twitter_post(
